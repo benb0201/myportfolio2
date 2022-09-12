@@ -53,6 +53,7 @@ h6{font-size: 16px;}
 .fullname{
     display: flex;
     justify-content: flex-start;
+    padding: 10px 0px 0px 10px;
 }
 
 .s1{
@@ -483,9 +484,3 @@ is able to adjust when changing screen size */
     background-color: var(--buttonColour);
     border: none;
 }
-
-
-/*(For help making intro wrapper) https://stackoverflow.com/questions/48101046/force-flex-item-to-span-full-row-width#:~:text=When%20you%20want%20a%20flex,now%20consumes%20all%20available%20space. */
-
-/* Understanding main containe/section:
-So we set the main-container to 1200px instead of 100% of the section which gives the effect of container inside another */
