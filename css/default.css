@@ -162,7 +162,7 @@ is able to adjust when changing screen size */
 }
 
 .nav-wrap{
-    /* flex: 0 0 100%; */
+    flex: 0 0 100%;
     height: 50px;
     width: 100%;
     border-bottom: 1px solid var(--borderColour);
@@ -220,6 +220,17 @@ is able to adjust when changing screen size */
 .browser-dot:hover{
     /* border: 2px solid var(--borderColour); */
     border-width: 1px;
+}
+
+@media screen and (max-width: 800px) {
+    .nav-wrap{
+        flex-direction: row;
+        font-size: 8.2px;
+    }
+    .browser-dot{
+        width: 10px;
+        height: 10px;
+    }
 }
 
 .theme-change{
@@ -310,6 +321,7 @@ is able to adjust when changing screen size */
 @media screen and (max-width: 800px) {
     .about-wrap{
         flex-direction: column;
+        gap: 70px;
     }
 }
 
@@ -369,16 +381,17 @@ is able to adjust when changing screen size */
         align-items: center;
         width: 350px;
     }
-    /* .align{
+    /*  */
+    .align{
         display: flex;
         flex-direction: column;
         align-items: center;
-    } */
+    }
 }
 
 .post-title{
     color: black;
-    /* margin: 0; */
+    margin: 0;
 }
 
 .post-intro{
@@ -422,7 +435,8 @@ is able to adjust when changing screen size */
 }
 
 #contact-form{
-    /* display: block; */
+    /*  */
+    display: block;
     max-width: 600px;
     margin: 0 auto;
     border: 1px solid var(--borderColour);
