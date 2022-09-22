@@ -53,7 +53,7 @@ h6{font-size: 16px;}
 .fullname{
     display: flex;
     justify-content: flex-start;
-    padding: 10px 0px 0px 10px;
+    padding: 10px 0px 20px 10px;
 }
 
 .s1{
@@ -69,6 +69,8 @@ h6{font-size: 16px;}
 }
 
 .main-container{
+    display: flex;
+    flex-direction: column;
     width: 1200px;
     margin: 0 auto;
 }
@@ -129,10 +131,14 @@ is able to adjust when changing screen size */
 
 @media screen and (max-width: 800px) {
     .greet h1{
-        font-size: 40px;
+        font-size: 28px;
     }
     .greet h5{
-        font-size: 15px;
+        font-size: 14px;
+    }
+
+    .fullname{
+        font-size: 12px;
     }
 
     #preview{
@@ -350,6 +356,7 @@ is able to adjust when changing screen size */
 
 #socials-img{
     width: 450px;
+    margin-left: 20px;
 }
 
 #projects-title{
@@ -396,6 +403,7 @@ is able to adjust when changing screen size */
     }
     #socials-img{
         width: 300px;
+        margin: 0;
     }
 }
 
@@ -473,6 +481,7 @@ is able to adjust when changing screen size */
     border-radius: 5px;
     background-color: var(--secondaryColour);
     font-size: 14px;
+    color: rgba(251, 249, 243, 0);
 }
 
 #submit-btn{
@@ -483,4 +492,24 @@ is able to adjust when changing screen size */
     color: #fff;
     background-color: var(--buttonColour);
     border: none;
+}
+
+#contact-form:hover{
+    background-color: var(--mainColour);
+    opacity: 0.4;
+    cursor: pointer;
+}
+.input-field:hover{
+    cursor: pointer;
+    color: rgba(251, 249, 243, 0.549);
+}
+#contact-form label:hover{
+    cursor: pointer;
+}
+#contact-form textarea:hover{
+    cursor: pointer;
+}
+
+.scroll{
+    align-self: flex-end;
 }
